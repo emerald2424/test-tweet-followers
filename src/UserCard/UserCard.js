@@ -25,8 +25,8 @@ export const UserCard = ({ user }) => {
     
     setIsLoading(true);
     updateUser(user.id, followers)
-      .then(data => {
-        return data;
+      .then(user => {
+        return user;
       })
       .catch((error) => {
         console.log(error);
