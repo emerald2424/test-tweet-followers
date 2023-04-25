@@ -1,0 +1,10 @@
+.btn_inactive {
+    padding: 8px 14px;
+    text-transform: uppercase;
+}
+
+.btn_active {
+    padding: 8px 14px;
+    text-transform: uppercase;
+    background-color: aquamarine;
+}
