@@ -21,11 +21,3 @@ export const updateUser = async (userId, updatedFollowers) => {
 //       })
 //     return await response.data;
 // }
-// axios({
-//     method: 'post',
-//     url: '/user/12345',
-//     data: {
-//       firstName: 'Fred',
-//       lastName: 'Flintstone'
-//     }
-//   });
