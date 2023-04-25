@@ -7,7 +7,7 @@ export const UserCard = ({ user }) => {
   const [followers, setFollowers] = useState(user.followers);
   const [buttonText, setButtonText] = useState("follow");
   const [isFollowed, setIsFollowed] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
 
   const handleClick = () => {
     if (!isFollowed) {
