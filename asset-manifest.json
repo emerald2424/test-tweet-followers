@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-tweet-followers/static/css/main.d1c15810.css",
+    "main.js": "/test-tweet-followers/static/js/main.e8dc20fa.js",
+    "index.html": "/test-tweet-followers/index.html",
+    "main.d1c15810.css.map": "/test-tweet-followers/static/css/main.d1c15810.css.map",
+    "main.e8dc20fa.js.map": "/test-tweet-followers/static/js/main.e8dc20fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1c15810.css",
+    "static/js/main.e8dc20fa.js"
+  ]
+}
