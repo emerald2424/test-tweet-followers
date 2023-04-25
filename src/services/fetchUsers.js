@@ -7,10 +7,11 @@ export const fetchUsers = async () => {
     return await response.data;
 }
 
-export const updateUser = async (userId, updatedFollowers) => {
-    const response = await axios.patch(`${BASE_URL}/user/${userId}`, { followers: updatedFollowers });
-    return await response.data;
-}
+// export const updateUser = async (userId, updatedFollowers) => {
+//     const response = await axios.patch(`${BASE_URL}/user/${userId}`, { followers: updatedFollowers });
+//     return await response.data;
+// }
+
 // export const updateUser = async (userId, updatedFollowers) => {
 //     const response = await axios({
 //         method: 'patch',

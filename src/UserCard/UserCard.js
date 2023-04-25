@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import css from "./UserCard.module.css";
-import { updateUser } from "../services/fetchUsers";
-import { toast } from "react-hot-toast";
+// import { updateUser } from "../services/fetchUsers";
+// import { toast } from "react-hot-toast";
 
 export const UserCard = ({ user }) => {
   const [followers, setFollowers] = useState(user.followers);
@@ -20,20 +20,25 @@ export const UserCard = ({ user }) => {
       setIsFollowed(false);
     }
   };
+  // const updateUser = () => {
 
+  // }
   useEffect(() => {
-    
-    setIsLoading(true);
-    updateUser(user.id, followers)
-      .then(user => {
-        return user;
-      })
-      .catch((error) => {
-        console.log(error);
-        toast.error("Something went wrong. We could not complete your request");
-      })
-      .finally(() => setIsLoading(false));
-  }, [user.id, followers]);
+    user.followers = followers;
+    // localStorage.setItem('users', JSON.stringify(users));
+    // setIsLoading(true);
+    // updateUser(user.id, followers)
+    //   .then(user => {
+    //     return user;
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //     toast.error("Something went wrong. We could not complete your request");
+    //   })
+    //   .finally(() => setIsLoading(false));
+
+
+  }, [user, followers]);
 
   return (
     <>

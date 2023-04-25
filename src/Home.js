@@ -1,10 +1,12 @@
+
 import { useState, useEffect } from "react";
 import { UserCard } from "./UserCard/UserCard";
 import { fetchUsers } from "./services/fetchUsers";
 import { toast } from 'react-hot-toast';
 
 const Home = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([])
+  
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
